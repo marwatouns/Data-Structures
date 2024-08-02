@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let tab = [ 10, 2, 5, 18, 3, 9 ]
+        let tab2 = [ 0, 2, 1, 4, 3, 20 ]
+        
+        function even(tab){
+            let newtab = []
+            for (const item of tab){
+                if (item % 2 == 0){
+                    newtab.push(item)
+                }
+            }
+            return newtab
+        }
+
+        let newTab1 = even(tab)
+        console.log(newTab1)
+
+        let newTab2 = even(tab2)
+        console.log(newTab2)
+       
+        
+        console.log("****************************************************************")
+
+        let persone = [
+            {
+                name : "karim",
+                age : "60",
+                email : "krimo",
+            },
+            {
+                name : "Abdo", 
+                age : "25",
+                email : "abi",
+            },
+            {
+                name : "miro", 
+                age : "35" ,
+                email : "amir", 
+            },
+            {
+                name : "miro", 
+                age : "15" ,
+                email : "amir", 
+            },
+            {
+                name : "pidro", 
+                age : "40" ,
+                email : "amir", 
+            },
+        ]
+       
+
+
+        function oldAge(tab){
+            let newtab = []
+            for (const elem of tab) {
+                if(elem.age > 30){
+                    newtab.push(elem)
+                } 
+            }
+            return newtab
+        }
+
+        newTab1 = oldAge(persone)
+        console.log(newTab1)
+
+      
+        console.log("**********************************************************************")
+
+
+        let tab1 =[1, 16, 77, 59, 5, 10, 10, 77]
+        let tab3 =[1, 20, 77, 60, 14, 10, 20]
+
+        // console.log(tab1.indexOf(10))
+
+        let tab4 = []
+
+        for (let i = 0; i < tab1.length; i++) {
+            // console.log(" tab1[" + i + "] " + tab1[i])
+            if(tab4.indexOf(tab1[i]) == -1){
+                tab4.push(tab1[i])
+            }
+        }
+
+        for (let i = 0; i < tab3.length; i++) {
+            // console.log(" tab1[" + i + "] " + tab1[i])
+            if(tab4.indexOf(tab3[i]) == -1){
+                tab4.push(tab3[i])
+            }
+        }
+
+        console.log(tab4)
+
+
+
+    </script>
+</body>
+</html>
